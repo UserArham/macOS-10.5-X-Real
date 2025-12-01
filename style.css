@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: 'Lucida Grande', sans-serif;
+    background: url('https://wallpapercave.com/wp/wp1841004.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#dock {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    background: rgba(0,0,0,0.5);
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.app {
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.app img {
+    width: 50px;
+    display: block;
+    margin: 0 auto 5px;
+}
+
+.app:hover {
+    transform: scale(1.2);
+}
+
+.window {
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    padding: 10px;
+    overflow: hidden;
+}
+
+.window-header {
+    background: #999;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: move;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.window-header span {
+    cursor: pointer;
+}
